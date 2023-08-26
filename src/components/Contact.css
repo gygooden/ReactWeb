@@ -1,13 +1,65 @@
+.contact-page {
+  display: flex;
+}
+
+.contact-header {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  background-color: #f5f5f5;
+}
+
+.contact {
+  margin: 0;
+  padding: 10px;
+}
+
 .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px; /* Add buffer above and below */
-  }
-  
-  .map-container {
-    width: 100%;
-    max-width: 800px;
-    margin: 20px 0;
-  }
-  
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.location-container,
+.map-container,
+.contacts-list-container {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.location-container {
+  margin-bottom: 20px;
+}
+
+.map-wrapper {
+  border: 5px solid rgb(0, 0, 0); 
+}
+
+
+.map-container {
+  max-width: 800px;
+  margin: 0;
+}
+
+.contacts-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-item {
+  border: 5px solid rgb(0, 0, 0);
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+}
+
+.contact-item h3 {
+  margin: 0;
+}
+
+.contact-item p {
+  margin: 5px 0;
+}
