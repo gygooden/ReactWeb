@@ -1,13 +1,16 @@
 import React from 'react';
 import './Footer.css';
 import { Button } from './Button';
+import Contact from './pages/Contact';
 import { Link } from 'react-router-dom';
 
 function Footer() {
-  const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSc0bSlBx8iksQYxNLSAPjVf4u49mTyFLEi9EIqzfMpGXDamkA/viewform?usp=sf_link';
+{/*Footer creates universal footer template applied evenly to all web pages*/}
+const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSc0bSlBx8iksQYxNLSAPjVf4u49mTyFLEi9EIqzfMpGXDamkA/viewform?usp=sf_link'; {/*Interchangeable google form/external link for visitor information*/}
   const openGoogleForm = () => {
     window.open(googleFormUrl, '_blank');
   };
+
   return (
       <div className='footer-container'>
         <section className='footer-subscription'>
@@ -51,6 +54,9 @@ function Footer() {
             >
              Support
             </a>
+            <Link to='/contact'>
+              More contact info
+            </Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
@@ -61,8 +67,9 @@ function Footer() {
             <Link to='/'>Presentations</Link>
             <Link to='/'>Influencer</Link>
           </div>
+
           {/*
-          <div class='footer-link-items'> // This code implements a social media section where links can be included
+          <div class='footer-link-items'> // This code implements an additional social media section where links can be included
             <h2>Social Media</h2>
             <Link to='/'>Instagram</Link>
             <Link to='/'>Facebook</Link>
@@ -70,6 +77,7 @@ function Footer() {
             <Link to='/'>Twitter</Link>
           </div>
           */}
+
         </div>
       </div>
       <section class='social-media'>
@@ -82,6 +90,7 @@ function Footer() {
           </div>
           <small class='website-rights'>Bullseye Biotechnologies, Inc © 2023</small>
           <div class='social-icons'>
+
             {/*
             // Insert this code to add facebook icon (no link attached)
             <Link
@@ -93,6 +102,7 @@ function Footer() {
               <i class='fab fa-facebook-f' />
             </Link>
             */}
+
             <a
               class='social-icon-link instagram' 
               href='https://www.instagram.com/bullseyebiotech/'

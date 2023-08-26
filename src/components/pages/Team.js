@@ -1,14 +1,14 @@
 import React from 'react';
 import '../../App.css';
+import TeamHero from '../TeamHero';
 import TeamCards from '../TeamCards';
 
-function Team() {
+export default function Team() {
   return (
     <>
-      <h1 className='team'>Team</h1>;
+      {/* <h1 className='team'>Team</h1>; */}
+      <TeamHero/>
       <TeamCards />
     </>
   );
 }
-
-export default Team;

@@ -1,0 +1,13 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Add buffer above and below */
+  }
+  
+  .map-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+  }
+  

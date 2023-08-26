@@ -105,6 +105,15 @@
     line-height: 20px; 
     margin-top: 10px;
   }
+
+  .team_bulleted_list {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .bulleted_list li {
+    margin-bottom: 8px;
+  }
   
   @media only screen and (min-width: 1200px) {
     .content__blog__container {

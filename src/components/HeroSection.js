@@ -4,9 +4,10 @@ import { Button } from './Button';
 import './HeroSection.css';
 
 function HeroSection() {
+  {/*HeroSection creates template for react banner applied to home page*/}
   return (
     <div className='hero-container'>
-      <video src='/videos/video-1.mp4' autoPlay loop muted />
+      <video src='/videos/video-2.mp4' autoPlay loop muted />
       <h1>Biotech for a Better Future</h1>
       <p>Pioneering vascularized organoids</p>
       <div className='hero-btns'>

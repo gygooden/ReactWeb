@@ -3,7 +3,7 @@ import '../../App.css'
 import HeroSection from '../HeroSection'
 import Cards from '../Cards';
 
-function Home () {
+export default function Home () {
     return (
         <>
             <HeroSection />
@@ -11,5 +11,3 @@ function Home () {
         </>
     );
 }
-
-export default Home;

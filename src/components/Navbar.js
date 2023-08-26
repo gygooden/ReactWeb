@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import logoImage from '../images/Bullseye.png'
 import './Navbar.css';
 
 function Navbar() {
@@ -24,7 +25,7 @@ function Navbar() {
 
   window.addEventListener('resize', showButton);
 
-  const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSc0bSlBx8iksQYxNLSAPjVf4u49mTyFLEi9EIqzfMpGXDamkA/viewform?usp=sf_link';
+  const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSc0bSlBx8iksQYxNLSAPjVf4u49mTyFLEi9EIqzfMpGXDamkA/viewform?usp=sf_link'; {/*Interchangeable google form/external link for visitor information*/}
 
   const openGoogleForm = () => {
     window.open(googleFormUrl, '_blank');
@@ -35,10 +36,17 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
+
+          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+            <img src={logoImage} alt="Bullseye Bio Logo" className="logo-image" />
+          </Link>
+          
+          {/*}
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             Bullseye Bio
             <i class='fab fa-typo3' />
           </Link>
+        */}
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
@@ -60,6 +68,16 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 Mission
+              </Link>
+            </li>
+
+            <li className='nav-item'>
+              <Link
+                to='/organoids'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Organoids
               </Link>
             </li>
 
@@ -87,11 +105,12 @@ function Navbar() {
               <Link
                 to='#'
                 className='nav-links-mobile'
-                onClick={openGoogleForm}
+                onClick={openGoogleForm} // Interchangeable signup external link, also replaceable at top
               >
                 Sign Up
               </Link>
             </li>
+
           </ul>
           {button && (
             <Button buttonStyle='btn--outline' onClick={openGoogleForm}>
