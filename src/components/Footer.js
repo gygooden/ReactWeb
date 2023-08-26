@@ -45,14 +45,14 @@ const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSc0bSlBx8iksQYxN
               target='_blank'
               aria-label='Contact'
             >
-             Email us
+             General email
             </a>
             <a
               href='mailto:contact@bullseyebio.com' // Can be altered to a support email
               target='_blank' 
               aria-label='Contact'
             >
-             Support
+             Support email
             </a>
             <Link to='/contact'>
               More contact info
