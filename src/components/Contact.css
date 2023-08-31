@@ -36,8 +36,8 @@
 
 .map-wrapper {
   border: 5px solid rgb(0, 0, 0); 
+  margin-top: 10px;
 }
-
 
 .map-container {
   max-width: 800px;
