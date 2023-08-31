@@ -9,7 +9,7 @@ function Contact() {
       <div className='contact-page'>
         <div className='contact-container'>
           <div className='location-container'>
-            <h2>Location</h2>
+            <h2>Company headquarters</h2>
             <div className='map-wrapper'>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d201911.66332737566!2d-122.31429778923845!3d37.74620005476819!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1693030119391!5m2!1sen!2sus" 
@@ -29,7 +29,14 @@ function Contact() {
                 <h3>Company contacts</h3>
                 <p>Email: contact@bullseyebio.com</p>
                 <p>Phone: (650) 223-5810</p>
-                <p>Address: San Francisco Bay Area, California, USA</p>
+              </li>
+            </ul>
+            <ul className='contacts-list'>
+              <li className='contact-item'>
+                <h3>Personal email list</h3>
+                <p>Oscar Abilez: oscar@bullseyebio.com</p>
+                <p>Frankie Myers: frankie@bullseyebio.com</p>
+                <p>Andy Gooden: andy@bullseyebio.com</p>
               </li>
             </ul>
           </div>

@@ -46,13 +46,12 @@ function TeamCards() {
 
             <CardItem
               src='images/img-2.jpg'
-              text='Andy Gooden, MSEE (Full time funny guy)'
+              text='Andy Gooden, MSEE (Co-founder)'
               label='Co-founder'
               path='/services'
               description={
                 <div>
                   <ul className='bulleted_list'>
-                    <li>Goes by Mr. Kev</li>
                     <li>Software (AI/ML), hardware</li>
                     <li>MS - Stanford, Electrical Engineering & Computer Science</li>
                     <li>OpenX - Staff Data Scientist</li>
