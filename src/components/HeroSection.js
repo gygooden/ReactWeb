@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
-import Contact from './pages/Contact';
 
 function HeroSection() {
   {/*HeroSection creates template for react banner applied to home page*/}
