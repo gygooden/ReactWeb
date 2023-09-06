@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
+import Contact from './pages/Contact';
 
 function HeroSection() {
   {/*HeroSection creates template for react banner applied to home page*/}
@@ -22,9 +24,9 @@ function HeroSection() {
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
-          onClick={console.log('hey')}
+          to='/contact'
         >
-          WATCH TRAILER <i className='far fa-play-circle' />
+          More about us
         </Button>
       </div>
     </div>

@@ -1,11 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Footer.css';
 import { Button } from './Button';
 import Contact from './pages/Contact';
+import logoImage from '../images/Bullseye.png'
 import { Link } from 'react-router-dom';
 
 function Footer() {
 {/*Footer creates universal footer template applied evenly to all web pages*/}
+const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+
+  useEffect(() => {
+    showButton();
+  }, []);
+
+  window.addEventListener('resize', showButton);
 const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSc0bSlBx8iksQYxNLSAPjVf4u49mTyFLEi9EIqzfMpGXDamkA/viewform?usp=sf_link'; {/*Interchangeable google form/external link for visitor information*/}
   const openGoogleForm = () => {
     window.open(googleFormUrl, '_blank');
@@ -83,10 +103,15 @@ const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSc0bSlBx8iksQYxN
       <section class='social-media'>
         <div class='social-media-wrap'>
           <div class='footer-logo'>
+          <Link to='/' className='footer-logo' onClick={closeMobileMenu}>
+            <img src={logoImage} alt="Bullseye Bio Logo" className="logo-image" />
+          </Link>
+{/*
             <Link to='/' className='social-logo'>
               Bullseye Bio
               <i class='fab fa-typo3' />
             </Link>
+*/}
           </div>
           <small class='website-rights'>Bullseye Biotechnologies, Inc © 2023</small>
           <div class='social-icons'>
