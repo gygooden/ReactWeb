@@ -4,7 +4,7 @@ import CardItem from './CardItem';
 
 function Cards() {
   const linkUrl1 = 'https://www.biorxiv.org/content/10.1101/2022.07.08.499233v1.full';
-    const linkUrl2 = 'https://pubmed.ncbi.nlm.nih.gov/33002105/';
+  const linkUrl2 = 'https://pubmed.ncbi.nlm.nih.gov/33002105/';
   const linkUrl3 = 'https://pubmed.ncbi.nlm.nih.gov/32763147/';
   const linkUrl4 = 'https://pubmed.ncbi.nlm.nih.gov/30480100/';
   const linkUrl5 = 'https://pubmed.ncbi.nlm.nih.gov/29086457/';

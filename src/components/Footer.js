@@ -54,7 +54,6 @@ const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSc0bSlBx8iksQYxN
           <div class='footer-link-items'>
             <h2>About Us</h2>
             <Link to='/'>Terms of Service</Link>
-            <Link to='/'>Testimonials</Link>
             <Link to='/'>Investors</Link>
             <Link to='/'>Careers</Link>
           </div>
@@ -68,7 +67,7 @@ const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSc0bSlBx8iksQYxN
              General email
             </a>
             <a
-              href='mailto:contact@bullseyebio.com' // Can be altered to a support email
+              href='mailto:contact@bullseyebio.com' // support email
               target='_blank' 
               aria-label='Contact'
             >
@@ -79,15 +78,16 @@ const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSc0bSlBx8iksQYxN
             </Link>
           </div>
         </div>
+
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>Videos</h2>
-            <Link to='/'>How we operate</Link>
-            <Link to='/'>Recent projects</Link>
+            <Link to='/'>Operations</Link>
+            <Link to='/'>Recent projects</Link> 
+            {/* Link to recent project, home page
+            */}
             <Link to='/'>Presentations</Link>
-            <Link to='/'>Influencer</Link>
           </div>
-
           {/*
           <div class='footer-link-items'> // This code implements an additional social media section where links can be included
             <h2>Social Media</h2>
@@ -97,9 +97,9 @@ const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSc0bSlBx8iksQYxN
             <Link to='/'>Twitter</Link>
           </div>
           */}
-
         </div>
       </div>
+
       <section class='social-media'>
         <div class='social-media-wrap'>
           <div class='footer-logo'>

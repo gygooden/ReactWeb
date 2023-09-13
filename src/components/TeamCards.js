@@ -11,7 +11,7 @@ function TeamCards() {
         <div className='cards__wrapper'>
         <ul className='cards__items'>
             <CardItem
-              src='images/img-9.jpg'
+              src='images/Oscar.jpg'
               text='Oscar Abilez, Md, PhD (Co-founder)'
               label='Co-founder'
               path='/services'
@@ -28,7 +28,7 @@ function TeamCards() {
             />
 
             <CardItem
-              src='images/img-2.jpg'
+              src='images/Frankie.jpg'
               text='Frankie Myers, PhD (Co-founder)'
               label='Co-founder'
               path='/services'
@@ -45,7 +45,7 @@ function TeamCards() {
             />
 
             <CardItem
-              src='images/img-2.jpg'
+              src='images/Andy.jpg'
               text='Andy Gooden, MSEE (Co-founder)'
               label='Co-founder'
               path='/services'

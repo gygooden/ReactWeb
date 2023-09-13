@@ -114,6 +114,13 @@
   .bulleted_list li {
     margin-bottom: 8px;
   }
+
+.cards__item img {
+  max-width: 100%; /* Limit the width of the image to its container */
+  max-height: 100%; /* Limit the height of the image to its container */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
   
   @media only screen and (min-width: 1200px) {
     .content__blog__container {
