@@ -15,12 +15,14 @@
   .organoid-videos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
   }
   
   .organoid-video {
-    flex-basis: calc(25% - 20px);
+    flex-basis: calc(50% - 20px); 
+    max-width: 400px;
+    width: 100%; 
     border: 1px solid #ddd;
     padding: 10px;
     background-color: #f9f9f9;
