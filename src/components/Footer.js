@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Footer.css';
 import { Button } from './Button';
-import Contact from './pages/Contact';
 import logoImage from '../images/Bullseye.png'
 import { Link } from 'react-router-dom';
 
@@ -59,6 +58,9 @@ const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSc0bSlBx8iksQYxN
           </div>
           <div class='footer-link-items'>
             <h2>Contact Us</h2>
+            <Link to='/contact'>
+              More contact info
+            </Link>
             <a
               href='mailto:contact@bullseyebio.com' 
               target='_blank'
@@ -73,20 +75,21 @@ const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSc0bSlBx8iksQYxN
             >
              Support email
             </a>
-            <Link to='/contact'>
-              More contact info
-            </Link>
           </div>
         </div>
 
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Operations</Link>
-            <Link to='/'>Recent projects</Link> 
-            {/* Link to recent project, home page
-            */}
-            <Link to='/'>Presentations</Link>
+            <h2>Our Work</h2>
+            <Link to='/organoids'> 
+              Organoid information
+            </Link>
+            <Link to='/'> 
+              Recent projects
+            </Link>
+            <Link to='/publications'> 
+              Publications
+            </Link>
           </div>
           {/*
           <div class='footer-link-items'> // This code implements an additional social media section where links can be included
